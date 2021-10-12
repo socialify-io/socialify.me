@@ -2,11 +2,6 @@
 @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
 
 /* Global */
-html {
-      min-height: 100%;
-      overflow: hidden;
-}
-
 body {
       height: calc(100vh - 8em);
       padding: 4em;
@@ -30,8 +25,8 @@ body {
 /*Animation*/
 
 .typewriter {
-      animation: typewriter 4s steps(40) 1s 1 normal both,
-      blinkTextCursor 500ms steps(40) infinite normal;
+      animation: typewriter 6s steps(30) 1s 1 normal both,
+      blinkTextCursor 500ms steps(30) infinite normal;
 }
 
 @keyframes typewriter {
@@ -39,10 +34,10 @@ body {
             width: 0;
       }
       35% {
-            width: 7em;
+            width: 6.5em;
       }
       65% {
-            width: 7em;
+            width: 6.5em;
       }
       100% {
             width: 16em;
