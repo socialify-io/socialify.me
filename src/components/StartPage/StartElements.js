@@ -3,25 +3,39 @@ import { Link } from 'react-scroll';
 
 export const Start = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 100%;
     background-image: linear-gradient(to top right, #2B89D3, #6FCDF7);
     /* background-color: red; */
 `
 
+export const Container = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+`
+
 export const Mockups = styled.div`
     display: flex;
     position: relative;
     height: 100%;
-    width: 40%;
-    margin: 40px 160px 40px 0;
+    /* width: 40%; */
+    margin: 40px 0 40px 160px;
     justify-content: flex-end;
 `
 
 export const About = styled.div`
     height: 100%;
-    width: 70%;
-    margin: 130px 0 40px 160px;
+    width: 45%;
+    max-width: 1100px;
+    margin: 0 0 40px 4%;
 `
 
 export const Title = styled.h1`
@@ -40,6 +54,7 @@ export const Description = styled.p`
     font-weight: 300;
     font-size: 1.4rem;
     color: #fff;
+    float: right;
 `
 
 export const DownloadBtn = styled(Link)`

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Start, Mockups, About, Title, Description, DownloadBtn } from './StartElements';
+import { Start, Mockups, About, Title, Description, DownloadBtn, Container } from './StartElements';
 
 const lightMockup = {
     height: '600px',
@@ -18,6 +18,7 @@ const StartPage = () => {
     return (
         <>
             <Start>
+                <Container>
                 <About>
                     <Title>
                        Put communities together 
@@ -30,9 +31,10 @@ const StartPage = () => {
                     </DownloadBtn>
                 </About>
                 <Mockups>
-                    <img style={lightMockup} src="/images/mockup-light.png" alt="light-mockup" />
-                    <img style={darkMockup} src="/images/mockup-dark.png" alt="dark-mockup" />
+                    <img style={lightMockup} src="/images/mockups/mockup-light.png" alt="light-mockup" />
+                    <img style={darkMockup} src="/images/mockups/mockup-dark.png" alt="dark-mockup" />
                 </Mockups>
+                </Container>
             </Start>
         </>
     )
